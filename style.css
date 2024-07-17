@@ -3,5 +3,13 @@
 }
 
 .side-icon {
-    width: 20px;
+    width: 25px;
+}
+
+.propic.small {
+    width: 60px;
+}
+
+.propic.large {
+    width: 80px;
 }
