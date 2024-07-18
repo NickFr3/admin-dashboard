@@ -1,5 +1,11 @@
 :root {
     --main-color: #0ea5e9;
+    --second-color: #f8fafc;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -11,6 +17,7 @@
     background-color: var(--main-color);
     grid-column: 1 / 2;
     grid-row: 1 / 5;
+    padding-left: 20px;
 }
 
 .side-header {
@@ -19,11 +26,20 @@
 }
 
 .dashboard-icon {
-    width: 50px;
+    width: 80px;
+}
+
+.header {
+    color: var(--second-color);
+    font-size: 3rem;
 }
 
 .side-icon {
     width: 25px;
+}
+
+.side-text {
+    color: var(--second-color);
 }
 
 .navbar {
