@@ -1,3 +1,23 @@
+:root {
+    --main-color: #0ea5e9;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.sidebar {
+    background-color: var(--main-color);
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+}
+
+.side-header {
+    display: flex;
+    align-items: center;
+}
+
 .dashboard-icon {
     width: 50px;
 }
@@ -6,10 +26,26 @@
     width: 25px;
 }
 
+.navbar {
+    grid-column: 2 / 7;
+}
+
 .propic.small {
     width: 60px;
 }
 
 .propic.large {
     width: 80px;
+}
+
+.content {
+    grid-column: 2 / 6;
+}
+
+.announcements {
+    grid-column: 6 / 7;
+}
+
+.trending {
+    grid-column: 6 / 7;
 }
