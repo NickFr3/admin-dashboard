@@ -11,6 +11,7 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+/* Left Sidebar */
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -56,8 +57,31 @@ body {
     margin: 0;
 }
 
+/* Top navbar */
 .navbar {
     grid-column: 2 / 7;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.searchbar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.profile-bar {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.user-greeting {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.buttons {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
 
 .propic.small {
