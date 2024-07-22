@@ -77,6 +77,12 @@ body {
 .user-greeting {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+}
+
+.propic.large {
+    width: 80px;
 }
 
 .buttons {
@@ -86,10 +92,6 @@ body {
 
 .propic.small {
     width: 60px;
-}
-
-.propic.large {
-    width: 80px;
 }
 
 .content {
