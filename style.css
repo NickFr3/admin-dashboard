@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-    --main-color: #0ea5e9;
-    --second-color: #f8fafc;
+    --main-color: #0284c7;
+    --second-color: #fafafa;
+    --third-color: #e5e7eb;
 }
 
 body {
@@ -62,16 +63,40 @@ body {
     grid-column: 2 / 7;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    background-color: white;
+    box-shadow: 20px 20px 0 10px rgba(0, 0, 0, 1);
+    padding: 12px 50px;
+    gap: 20px;
 }
 
 .searchbar {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    align-self: center;
+    display: flex;
+    gap: 20px;
+}
+
+.search-input {
+    background-color: var(--third-color);
+    border: none;
+    width: 90%;
+    height: 50px;
+    border-radius: 40px;
 }
 
 .profile-bar {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: end;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .user-greeting {
@@ -79,23 +104,55 @@ body {
     grid-row: 2 / 3;
     display: flex;
     align-items: center;
+    gap: 20px;
+}
+
+.greeting {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.greeting > p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.propic {
+    border-radius: 50%;
 }
 
 .propic.large {
-    width: 80px;
+    width: 100px;
+    height: 100px;
 }
 
 .buttons {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    align-self: center;
+    display: flex;
+    gap: 16px;
+    justify-content: end;
+}
+
+.nav-button {
+    background-color: var(--main-color);
+    border: none;
+    padding: 16px 30px;
+    border-radius: 40px;
+    color: var(--second-color);
+    font-size: 1.2rem;
 }
 
 .propic.small {
     width: 60px;
+    height: 60px;
 }
 
+/* Main Content */
 .content {
     grid-column: 2 / 6;
+    background-color: var(--third-color);
 }
 
 .announcements {
