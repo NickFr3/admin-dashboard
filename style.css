@@ -20,7 +20,7 @@ body {
     height: 100vh;
 }
 
-/* Left Sidebar */
+/* LEFT SIDEBAR */
 .sidebar {
     background-color: var(--main-color);
     grid-column: 1 / 2;
@@ -61,7 +61,7 @@ body {
     margin: 0;
 }
 
-/* Top navbar */
+/* TOP NAVBAR */
 .navbar {
     grid-column: 2 / 7;
     display: grid;
@@ -151,7 +151,7 @@ body {
     height: 60px;
 }
 
-/* Main Content */
+/* MAIN CONTENT */
 .content {
     grid-column: 2 / 6;
     grid-row: 2 / 5;
@@ -162,6 +162,11 @@ body {
     padding: 20px;
 }
 
+.section-title {
+    font-size: 1.5rem;
+}
+
+/* PROJECT SECTION */
 .projects {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -209,16 +214,25 @@ body {
     gap: 25px;
 }
 
+/* ANNOUNCEMENTS SECTION */
 .announcements {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
+.message:nth-child(2) {
+    border-bottom: 2px solid var(--third-color);
+    border-top: 2px solid var(--third-color);
+}
+
+/* TRENDING SECTION */
 .trending {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
 
-.section-title {
-    font-size: 1.5rem;
+.user-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
